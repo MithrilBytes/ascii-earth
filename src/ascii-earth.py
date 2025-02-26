@@ -88,7 +88,7 @@ def render_globe(stdscr):
 
         globe_strings = ["".join(row) for row in globe]
 
-        # ✅ Smooth Refresh: Only update changed rows instead of clearing everything
+        # Smooth Refresh: Only update changed rows instead of clearing everything
         if prev_globe_strings:
             for i, row in enumerate(globe_strings):
                 if prev_globe_strings[i] != row:  # Only update if different
